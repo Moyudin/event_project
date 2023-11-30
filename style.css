@@ -1,0 +1,27 @@
+.home{
+    background-image: url(images/hero-bg.png);
+}
+.img-mic{
+    height: 60px;
+    border: solid bisque;
+    border-radius:30px ;
+}
+.card-image{
+    height: 60px;
+    width: 70px;
+}
+.test_img2-bg{
+    background-image: url(images/testimonial_bg.jpg);
+}
+.img-border{
+    border-radius: 30px;
+}
+.color-blue{
+    background-color: #3C60F4;
+}
+.text-color{
+    color: #3C60F4;
+}
+.address-img{
+    height: 40px;
+}
