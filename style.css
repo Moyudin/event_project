@@ -3,7 +3,7 @@
 }
 .img-mic{
     height: 60px;
-    border: solid bisque;
+    border: solid white;
     border-radius:30px ;
 }
 .card-image{
@@ -19,9 +19,31 @@
 .color-blue{
     background-color: #3C60F4;
 }
+.colorblue2{
+    background-color: #3C60F4;
+}
 .text-color{
     color: #3C60F4;
 }
 .address-img{
     height: 40px;
+}
+@media screen and (min-width:992px){
+    .solid{
+        border: 1px groove white;
+    }
+}
+
+/* JS CSS*/
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+.nav-text{
+    color: white;
+}
+
+.textdark{
+    color: white;
 }

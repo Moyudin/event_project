@@ -1,3 +1,67 @@
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+    //For navbar
+    var navbar = document.getElementById('navbar');
+    navbar.classList.toggle("dark-mode");
+    if (navbar.classList.contains('dark-mode')){
+        navbar.classList.remove('navbar-light');
+        navbar.classList.remove('bg-light');
+    } else {
+        navbar.classList.add('navbar-light');
+        navbar.classList.add('bg-light');
+    }
+
+    // for what we do
+    var col = document.getElementById('col-l')
+    col.classList.toggle("colorblue2");
+    col.classList.toggle("dark-mode");
+
+    var textw = document.getElementById('text-white1')
+    textw.classList.toggle("textdark");
+    textw.classList.toggle("text-white");
+
+    var textw = document.getElementById('text-white1i');
+    textw.classList.toggle("textdark");
+    textw.classList.toggle("text-white");
+
+    var textw = document.getElementById('text-white2');
+    textw.classList.toggle("textdark");
+    textw.classList.toggle("text-white");
+
+    var textw = document.getElementById('text-white2i');
+    textw.classList.toggle("textdark");
+    textw.classList.toggle("text-white");
+
+    var textw = document.getElementById('text-white3')
+    textw.classList.toggle("textdark");
+    textw.classList.toggle("text-white");
+
+    var textw = document.getElementById('text-white3i')
+    textw.classList.toggle("textdark");
+    textw.classList.toggle("text-white");
+
+    // card
+    var cardi = document.getElementById('card-i');
+    cardi.classList.toggle("dark-mode");
+
+    var cardii = document.getElementById('card-ii');
+    cardii.classList.toggle("dark-mode");
+
+    var cardiii = document.getElementById('card-iii');
+    cardiii.classList.toggle("dark-mode");
+
+    var cardiv = document.getElementById('card-iv');
+    cardiv.classList.toggle("dark-mode");
+
+    var cardv = document.getElementById('card-v');
+    cardv.classList.toggle("dark-mode");
+
+    var cardvi = document.getElementById('card-vi');
+    cardvi.classList.toggle("dark-mode");
+}
+
 function validate(){
 	var user=document.getElementById('user').value;
     var email=document.getElementById('email').value;

@@ -10,28 +10,29 @@
 </head>
 <body>
   <section class="nav-bar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="images/logo (1).png" alt="stack-logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon "></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active nav-text" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link nav-text" href="#">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonals</a>
+              <a class="nav-link nav-text" href="#">Testimonals</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
+              <a class="nav-link nav-text" href="#">About us</a>
+            </li>  
           </ul>
-        </div>
+        </div>          
+      <button class="btn text-center me-auto ms-auto border border-info text-white bg-danger" id="darkmode" onclick="myFunction()">Toggle Dark Mode</button>
       </div>
     </nav>
   </section>
@@ -48,34 +49,34 @@
     </div>
   </section>
 
-  <section class="what-we-do pb-4 ">
+  <section class="what-we-do">
     <div class="container-fluid">
       <div class="row">
-        <div class=" col-lg-6 text-center mt-5">
+        <div class="col-lg-6 text-center pt-5 solid">
           <h2>We are helping to grow your business</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ad nihil! Saepe praesentium quo aliquam harum corporis, nam repudiandae nostrum!</p>
-          <button class="btn rounded-pill border-white color-blue text-white m-2">ABOUT US</button>
+          <button class="btn rounded-pill color-blue text-white m-2">ABOUT US</button>
         </div>
-        <div class=" col-lg-6  color-blue">
-          <div class="d-inline-flex ">
-            <img src="images/mic.jpg" class="img-mic img-fluid mt-3" alt="mic-img">
+        <div class="col-lg-6 colorblue2 solid" id="col-l">
+          <div class="d-inline-flex" >
+            <img src="images/mic2.png" class="img-mic img-fluid mt-3" alt="mic-img">
             <div class="m-4 ">
-              <h5 class="text-white">WHAT WE DO</h5>
-              <small class=" text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </small>
+              <h5 class="text-white" id="text-white1">WHAT WE DO</h5>
+              <small class="text-white" id="text-white1i">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </small>
             </div>
           </div>
           <div class="d-inline-flex">
-            <img src="images/person.jpg" class="img-mic img-fluid mt-3" alt="person-img">
+            <img src="images/person2.png" class="img-mic img-fluid mt-3" alt="person-img">
             <div class="m-4">
-              <h5 class="text-white">MEET OUR TEAM</h5>
-              <small class=" text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </small>
+              <h5 class="text-white" id="text-white2">MEET OUR TEAM</h5>
+              <small class="text-white" id="text-white2i">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </small>
             </div>
           </div>
           <div class="d-inline-flex">
-            <img src="images/star.jpg" class="img-mic img-fluid mt-3" alt="star-img">
+            <img src="images/star2.png" class="img-mic img-fluid mt-3" alt="star-img">
             <div class="m-4">
-              <h5 class="text-white">OUR CREATION</h5>
-              <small class=" text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </small>
+              <h5 class="text-white" id="text-white3">OUR CREATION</h5>
+              <small class=" text-white" id="text-white3i">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </small>
             </div>
           </div>
         </div>
@@ -83,16 +84,16 @@
     </div>
   </section>
 
-  <section class="our-services">
+  <section class="our-services mt-4">
     <div class="container text-center mb-5">
       <div class="text">
         <h2>OUR SERVICES</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.</p>
       </div>
-      <div class="row  p-1 m-1">
+      <div class="row p-1 m-1">
         <div class="col-lg-4 ">
-          <div class="card  shadow" >
-            <img src="images/pencil.jpg" class="img-fluid card-image m-1" alt="pencil-img">
+          <div class="card shadow border border-white" id="card-i">
+            <img src="images/pencil.png" class="img-fluid card-image m-1" alt="pencil-img">
             <div class="card-body text-start ">
               <h5 class="card-title">CONTENT WRITING</h5>
               <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -100,8 +101,8 @@
           </div>
         </div>
         <div class="col-lg-4 ">
-          <div class="card shadow" >
-            <img src="images/suitcase.jpg" class="img-fluid card-image m-1" alt="suitcase-img">
+          <div class="card shadow border border-white" id="card-ii" >
+            <img src="images/suitcase.png" class="img-fluid card-image m-1" alt="suitcase-img">
             <div class="card-body text-start ">
               <h5 class="card-title">DIGITAL MARKETING</h5>
               <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -109,8 +110,8 @@
           </div>
         </div>
         <div class="col-lg-4 ">
-          <div class="card shadow" >
-            <img src="images/setting.jpg" class="img-fluid card-image m-1" alt="setting-img">
+          <div class="card shadow border border-white" id="card-iii">
+            <img src="images/setting.png" class="img-fluid card-image m-1" alt="setting-img">
             <div class="card-body text-start ">
               <h5 class="card-title">WEB DEVELOPMENT</h5>
               <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -119,9 +120,9 @@
         </div>
       </div>
       <div class="row p-1 m-1">
-        <div class="col-lg-4 ">
-          <div class="card shadow" >
-            <img src="images/small-phone.jpg" class="img-fluid card-image m-1" alt="small-img">
+        <div class="col-lg-4">
+          <div class="card shadow border border-white" id="card-iv">
+            <img src="images/small-phone.png" class="img-fluid card-image m-1" alt="small-img">
             <div class="card-body text-start ">
               <h5 class="card-title">CONTENT WRITING</h5>
               <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -129,17 +130,17 @@
           </div>
         </div>
         <div class="col-lg-4 ">
-          <div class="card shadow" >
-            <img src="images/database-img.jpg" class="img-fluid card-image m-1" alt="database-img">
+          <div class="card shadow border border-white" id="card-v">
+            <img src="images/database.png" class="img-fluid card-image m-1" alt="database-img">
             <div class="card-body text-start ">
               <h5 class="card-title">DIGITAL MARKETING</h5>
               <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 ">
-          <div class="card shadow" >
-            <img src="images/rocket.jpg" class="img-fluid card-image m-1" alt="rocket-img">
+        <div class="col-lg-4">
+          <div class="card shadow border border-white" id="card-vi">
+            <img src="images/rocket.png" class="img-fluid card-image m-1" alt="rocket-img">
             <div class="card-body text-start ">
               <h5 class="card-title">WEB DEVELOPMENT</h5>
               <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -150,7 +151,7 @@
     </div>
   </section>
 
-  <section class="test_img2-bg">
+  <section class="test_img2-bg solid">
     <div class="container text-center p-5">
         <img src="images/test_img2.jpg" alt="test_img2" class="img-fluid img-border"><br>
         <a class="text-decoration-none text-color" href="#" >Kristiana</a><small class="text-white">,Web Developer</small><br>
@@ -159,11 +160,11 @@
     </div>
   </section>
   
-  <section class="GET-IN-TOUCH">
-    <div class="container mb-3">
+  <section class="GET-IN-TOUCH ">
+    <div class="container-fluid mb-3">
       <div class="row">
-        <div class="col-md-8 mb-1">
-          <h3 class="mt-4">GET IN <span class="text-color">TOUCH</span></h3>
+        <div class="offset-md-1 col-md-5 mb-1 ">
+          <h3 class="mt-4 ">GET IN <span class="text-color">TOUCH</span></h3>
           <p>Enter Your message to get in touch</p>
           <form action="home.html" name="registration" onsubmit="return validate();">
             <div class="mb-3">
@@ -186,10 +187,10 @@
               <textarea type="message" class="form-control shadow" name="message" id="message" placeholder="Your Message"></textarea>
               <span id="message-f" class="text-danger font-weight-bold"></span>
             </div>
-            <button type="submit" class="btn color-blue border-white text-white rounded-pill">Send Message</button>
+            <button type="submit" class="btn color-blue text-white rounded-pill">Send Message</button>
           </form>
         </div>
-        <div class="col-md-4 mb-1">
+        <div class="offset-md-1 col-md-3 mb-1">
           <h3 class="text-center mt-4">OUR ADDRESS</h3>
           <div class="m-3">
             <div class="d-inline-flex d-block">
@@ -210,7 +211,7 @@
     </div>
   </section>
 
-  <section class="footer bg-dark pb-2 p-1 ">
+  <section class="footer bg-dark pb-2 p-1 solid" id="foot">
     <div class="container">
       <div class="row ">
         <div class="col-md-3 mt-4">
@@ -265,12 +266,11 @@
       </nav>
     </div>
   </section>
-
-    <!--Script For Components of Bootstrap-->
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  
+  <!--Script For Components of Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
    
-   <script src="javascript.js"></script>
-
-  </body>
+  <script src="javascript.js"></script>
+</body>
 </html>
