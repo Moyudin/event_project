@@ -2,6 +2,13 @@ function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
 
+    var darkModeButton = document.getElementById('darkmode');
+    if (element.classList.contains("dark-mode")) {
+        darkModeButton.innerText = 'Dark Mode';
+    } else {
+        darkModeButton.innerText = 'Light Mode';
+    }
+
     //For navbar
     var navbar = document.getElementById('navbar');
     navbar.classList.toggle("dark-mode");
