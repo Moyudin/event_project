@@ -25,21 +25,28 @@
 .text-color{
     color: #3C60F4;
 }
+#darkmode{
+    border: 1px groove #3C60F4;
+}
 .address-img{
     height: 40px;
 }
 @media screen and (min-width:992px){
     .solid{
+        border-bottom: 1px groove white;
+    }
+    #sol{
+        border-right: 1px groove white;
+    }
+    .soli{
         border: 1px groove white;
     }
 }
-
 /* JS CSS*/
-.dark-mode {
+.dark-mode{
     background-color: black;
     color: white;
-  }
-
+}
 .nav-text{
     color: white;
 }

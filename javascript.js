@@ -5,8 +5,12 @@ function myFunction() {
     var darkModeButton = document.getElementById('darkmode');
     if (element.classList.contains("dark-mode")) {
         darkModeButton.innerText = 'Dark Mode';
+        darkModeButton.classList.remove('bg-light');
+        darkModeButton.classList.add('text-white');
     } else {
         darkModeButton.innerText = 'Light Mode';
+        darkModeButton.classList.add('bg-light');
+        darkModeButton.classList.remove('text-white');
     }
 
     //For navbar
@@ -78,21 +82,21 @@ function validate(){
 
     // For Username
     if(user==null || user==""){
-		document.getElementById('uname').innerHTML ="Please fill the username feild";
+		document.getElementById('uname').innerHTML ="Please fill the username field";
 		return false;
 	}
     if((user.length<=2) || (user.length>=30)){
 
-		document.getElementById('uname').innerHTML ="Username lenght must be between 3 and 30 ";
+		document.getElementById('uname').innerHTML ="Username length must be between 3 and 30 ";
 		return false;
 	}
-    if(!isNaN(user)){
-		document.getElementById('uname').innerHTML ="only character is allowed ";
+    if(/\d/.test(user)){
+		document.getElementById('uname').innerHTML ="Only (A-Z/a-z) character is allowed ";
 		return false;
 	}
     // For Email
     if(email==null || email==""){
-		document.getElementById('emailid').innerHTML ="Please fill the email feild";
+		document.getElementById('emailid').innerHTML ="Please fill the email field";
 		return false;
 	}
     if(email.indexOf('@') <= 0){
@@ -105,11 +109,11 @@ function validate(){
     }
     // For Mobile No
     if(mobilenum==null || mobilenum==""){
-		document.getElementById('mobileno').innerHTML ="Please fill the mobile number feild";
+		document.getElementById('mobileno').innerHTML ="Please fill the mobile number field";
 		return false;
 	}
 	if(mobilenum.length!=10){
-		document.getElementById('mobileno').innerHTML ="mobile number should be in 10 digits not more or less than 10.";
+		document.getElementById('mobileno').innerHTML ="Mobile number should be in 10 digits not more or less than 10.";
 		return false;
 	}
     // For OTP
@@ -123,7 +127,7 @@ function validate(){
 	}
     //For Message
     if(mess==null || mess==""){
-		document.getElementById('message-f').innerHTML ="Please leave some message";
+		document.getElementById('message-f').innerHTML ="Please leave some message for us";
 		return false;
 	}
     return true;
